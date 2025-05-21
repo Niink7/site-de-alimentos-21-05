@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Museu do Sabor</title>
+    <meta name="description" content="Faça sua reserva no Museu do Sabor - Restaurante premium em São Paulo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <div class="container">
+            <div class="logo-nav">
+                <span>Museu do Sabor</span>
+            </div>
+            <ul class="menu" id="menu-principal">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="index.html#chef">Nosso Chef</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-mobile" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Reserva -->
+    <section class="reserva-section">
+        <div class="container">
+            <div class="reserva-container">
+                <h2 class="reserva-title">Faça sua Reserva</h2>
+                <form class="reserva-form" id="form-reserva">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo*</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone*</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pessoas">Nº de Pessoas*</label>
+                            <select id="pessoas" name="pessoas" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="1">1 pessoa</option>
+                                <option value="2">2 pessoas</option>
+                                <option value="3">3 pessoas</option>
+                                <option value="4">4 pessoas</option>
+                                <option value="5">5 pessoas</option>
+                                <option value="6">6 pessoas</option>
+                                <option value="7">7+ pessoas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="data">Data*</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hora">Horário*</label>
+                            <select id="hora" name="hora" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes" rows="3" placeholder="Alergias, necessidades especiais, comemorações..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Confirmar Reserva</button>
+                </form>
+                <div class="reserva-info">
+                    <h3>Informações Importantes</h3>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Horário de funcionamento: Terça a Quinta (18h-23h), Sexta e Sábado (12h-00h), Domingo (12h-18h)</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-user-tie"></i>
+                        <p>Requisito de vestimenta: Smart casual (não aceitamos regata, chinelos ou shorts curtos)</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-undo"></i>
+                        <p>Cancelamentos devem ser feitos com pelo menos 24h de antecedência</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Dúvidas? (11) 98765-4321 ou contato@museudosabor.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <h3>Horário de Funcionamento</h3>
+                <p>Terça a Quinta: 18h - 23h</p>
+                <p>Sexta e Sábado: 12h - 00h</p>
+                <p>Domingo: 12h - 18h</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                <p><i class="fas fa-envelope"></i> contato@museudosabor.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Gastronômica, 123 - São Paulo</p>
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Museu do Sabor. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('form-reserva').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const telefone = document.getElementById('telefone').value;
+            const email = document.getElementById('email').value;
+            const data = document.getElementById('data').value;
+
+            if (!nome || !telefone || !email || !data) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+
+            alert('Reserva enviada com sucesso! Entraremos em contato para confirmação.');
+            this.reset();
+
+            // Aqui você pode adicionar código para enviar os dados para o servidor.
+        });
+
+        document.getElementById('data').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>
